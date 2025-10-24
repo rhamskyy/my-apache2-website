@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teachers</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+    /* ===== GLOBAL STYLE ===== */
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(180deg, #e9eef5, #c5d4e3);
+      color: #001c40;
+      text-align: center;
+    }
+
+    /* ===== HEADER ===== */
+    header {
+      background: rgba(255, 255, 255, 0.3);
+      border: 1px solid rgba(0,0,0,0.1);
+      padding: 15px 0;
+      margin: 15px;
+      border-radius: 35px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 1.8em;
+      color: #002b5b;
+    }
+
+    /* ===== NAVBAR ===== */
+    nav {
+      background: rgba(255,255,255,0.4);
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      border: 1px solid rgba(0,0,0,0.2);
+      border-radius: 40px;
+      margin: 10px auto;
+      width: fit-content;
+      padding: 10px 25px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+    }
+
+    nav a {
+      padding: 10px 25px;
+      color: #002b5b;
+      text-decoration: none;
+      font-weight: 600;
+      border-radius: 25px;
+      background: rgba(255,255,255,0.6);
+      border: 1px solid transparent;
+      transition: all 0.3s ease;
+    }
+
+    nav a:hover {
+      background: #1b3b6f;
+      color: #fff;
+      transform: translateY(-2px);
+      box-shadow: 0 0 10px #8fb9ff;
+    }
+
+    nav a.active {
+      background: #1b3b6f;
+      color: #fff;
+      box-shadow: 0 0 12px #8fb9ff;
+    }
+
+    /* ===== MAIN CONTENT ===== */
+    main {
+      margin: 25px auto;
+      width: 90%;
+      max-width: 1000px;
+      border: 1px solid #1b3b6f;
+      background: #ffffffd9;
+      border-radius: 25px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+      overflow: hidden;
+      padding: 25px 0 35px 0;
+    }
+
+    h2 {
+      color: #002b5b;
+      margin-top: 15px;
+    }
+
+    /* ===== TABLE STYLE ===== */
+    table {
+      width: 80%;
+      margin: 25px auto;
+      border-collapse: collapse;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+      background: #fff;
+    }
+
+    th, td {
+      padding: 12px 15px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #1b3b6f;
+      color: #fff;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      font-size: 0.9em;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f0f4fa;
+    }
+
+    tr:hover {
+      background-color: #dce6f7;
+    }
+
+    td {
+      color: #001c40;
+      font-size: 0.95em;
+    }
+
+    /* ===== FOOTER ===== */
+    footer {
+      margin-top: 40px;
+      font-size: 0.9em;
+      color: #002b5b;
+      background: transparent;
+      border: none;
+      padding: 10px 0;
+    }
+
+    footer span {
+      font-weight: 600;
+    }
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>My Teachers</h1>
+  </header>
+
+  <nav>
+    <a href="index.html">School</a>
+    <a href="profile.html">Profile</a>
+    <a href="teachers.html" class="active">Teachers</a>
+    <a href="major.html">Major</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <main>
+    <h2>Teachers of SMKN 3 Bengkulu City</h2>
+
+    <table>
+      <thead>
+        <tr>
+          <th>No</th>
+          <th>Name</th>
+          <th>Position</th>
+          <th>Subject</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Mirsalin, S.E., M.Pd</td>
+          <td>Headmaster</td>
+          <td>Administration Management</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Sriyanto</td>
+          <td>Teacher</td>
+          <td>Computer and Network Engineering (TKJ)</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Markos Hadinata, S.Kom</td>
+          <td>Teacher</td>
+          <td>Informatics</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>Angga</td>
+          <td>Teacher</td>
+          <td>Sports</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>Ferly</td>
+          <td>Teacher</td>
+          <td>Computer and Network Engineering (TKJ)</td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td>Juita</td>
+          <td>Teacher</td>
+          <td>Indonesian Language</td>
+        </tr>
+      </tbody>
+    </table>
+  </main>
+
+  <footer>
+    Copyright© 2025 — This website was created by <span>rhamskyy</span><br>
+    TKJ SMKN 3 Bengkulu City
+  </footer>
+
+</body>
+</html>
+

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+    /* ===== Global Styles ===== */
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(180deg, #e9eef5, #c5d4e3);
+      color: #001c40;
+      text-align: center;
+    }
+
+    /* ===== Header ===== */
+    header {
+      background: rgba(255, 255, 255, 0.3);
+      border: 1px solid rgba(0,0,0,0.1);
+      padding: 15px 0;
+      margin: 15px;
+      border-radius: 35px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 1.8em;
+      color: #002b5b;
+    }
+
+    /* ===== Navbar ===== */
+    nav {
+      background: rgba(255,255,255,0.4);
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      border: 1px solid rgba(0,0,0,0.2);
+      border-radius: 40px;
+      margin: 10px auto;
+      width: fit-content;
+      padding: 10px 25px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+    }
+
+    nav a {
+      padding: 10px 25px;
+      color: #002b5b;
+      text-decoration: none;
+      font-weight: 600;
+      border-radius: 25px;
+      background: rgba(255,255,255,0.6);
+      border: 1px solid transparent;
+      transition: all 0.3s ease;
+    }
+
+    nav a:hover {
+      background: #1b3b6f;
+      color: #fff;
+      transform: translateY(-2px);
+      box-shadow: 0 0 10px #8fb9ff;
+    }
+
+    nav a.active {
+      background: #1b3b6f;
+      color: #fff;
+      box-shadow: 0 0 12px #8fb9ff;
+    }
+
+    /* ===== Main Container ===== */
+    main {
+      margin: 25px auto;
+      width: 90%;
+      max-width: 1000px;
+      border: 1px solid #1b3b6f;
+      background: #ffffffd9;
+      border-radius: 25px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+      overflow: hidden;
+      padding-bottom: 30px;
+    }
+
+    /* ===== Profile Title ===== */
+    .subtitle {
+      font-size: 1.1em;
+      color: #002b5b;
+      font-weight: 600;
+      margin-top: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      opacity: 0.9;
+    }
+
+    .subtitle::before,
+    .subtitle::after {
+      content: "";
+      flex: 1;
+      height: 1px;
+      background-color: #002b5b33;
+      max-width: 100px;
+    }
+
+    /* ===== Profile Photo ===== */
+    .profile {
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .profile img {
+      width: min(180px, 35vw);
+      height: min(180px, 35vw);
+      border-radius: 50%;
+      object-fit: cover;
+      aspect-ratio: 1 / 1;
+      border: 3px solid #007bff;
+      box-shadow: 0 0 25px rgba(0, 123, 255, 0.4);
+      animation: float 5s ease-in-out infinite;
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+    }
+
+    @keyframes float {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+      100% { transform: translateY(0); }
+    }
+
+    .profile img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 35px rgba(0, 123, 255, 0.8);
+    }
+
+    /* ===== Text Content ===== */
+    h2 {
+      color: #002b5b;
+      margin-top: 25px;
+    }
+
+    p {
+      width: 80%;
+      margin: 10px auto;
+      color: #1a2a4f;
+      line-height: 1.6;
+      font-size: 0.95em;
+    }
+
+    /* ===== Footer ===== */
+    footer {
+      margin-top: 40px;
+      font-size: 0.9em;
+      color: #002b5b;
+      background: transparent;
+      border: none;
+      padding: 10px 0;
+    }
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>My Profile</h1>
+  </header>
+
+  <nav>
+    <a href="index.html">School</a>
+    <a href="profile.html" class="active">Profile</a>
+    <a href="teachers.html">Teachers</a>
+    <a href="major.html">Major</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <main>
+    <div class="subtitle">Official Profile — rhamskyy</div>
+
+    <div class="profile">
+      <img src="MONSTER.jpg" alt="Profile Photo">
+    </div>
+
+    <h2>About Me</h2>
+    <p>Hi, I’m <b>rhamskyy</b>, a tech enthusiast and cyber security explorer. I’m passionate about ethical hacking, system defense, and digital innovation. I enjoy learning how systems work from the inside and creating efficient, secure digital solutions that combine logic and creativity.</p>
+
+    <h2>Skills</h2>
+    <p>- <b>Ethical Hacking & Cyber Defense</b> — analyzing vulnerabilities and securing networks.<br>
+       - <b>Web Development</b> — creating clean and elegant interfaces using HTML, CSS, and JS.<br>
+       - <b>Linux Server Management</b> — handling Apache servers and Debian-based systems.<br>
+       - <b>Creative Problem Solving</b> — turning technical issues into polished results.</p>
+  </main>
+
+    <footer>
+    Copyright© 2025 — This website was created by <span class="made-by">rhamskyy</span><br>
+    <span class="school">TKJ SMKN 3 Bengkulu City</span>
+  </footer>
+
+</body>
+</html>
+
