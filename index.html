@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>School</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+    /* ===== Global Styles ===== */
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(180deg, #e9eef5, #c5d4e3);
+      color: #001c40;
+      text-align: center;
+    }
+
+    /* ===== Header ===== */
+    header {
+      background: rgba(255, 255, 255, 0.3);
+      border: 1px solid rgba(0,0,0,0.1);
+      padding: 15px 0;
+      margin: 15px;
+      border-radius: 35px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 1.8em;
+      color: #002b5b;
+    }
+
+    /* ===== Navbar ===== */
+    nav {
+      background: rgba(255,255,255,0.4);
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      border: 1px solid rgba(0,0,0,0.2);
+      border-radius: 40px;
+      margin: 10px auto;
+      width: fit-content;
+      padding: 10px 25px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+    }
+
+    nav a {
+      padding: 10px 25px;
+      color: #002b5b;
+      text-decoration: none;
+      font-weight: 600;
+      border-radius: 25px;
+      background: rgba(255,255,255,0.6);
+      border: 1px solid transparent;
+      transition: all 0.3s ease;
+    }
+
+    nav a:hover {
+      background: #1b3b6f;
+      color: #fff;
+      transform: translateY(-2px);
+      box-shadow: 0 0 10px #8fb9ff;
+    }
+
+    nav a.active {
+      background: #1b3b6f;
+      color: #fff;
+      box-shadow: 0 0 12px #8fb9ff;
+    }
+
+    /* ===== Main Container ===== */
+    main {
+      margin: 25px auto;
+      width: 90%;
+      max-width: 1000px;
+      border: 1px solid #1b3b6f;
+      background: #ffffffd9;
+      border-radius: 25px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+      overflow: hidden;
+      padding-bottom: 30px;
+      backdrop-filter: blur(6px);
+    }
+
+    /* ===== Title Section ===== */
+    .subtitle {
+      font-size: 1.3em;
+      color: #002b5b;
+      font-weight: 600;
+      margin-top: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    .subtitle::before,
+    .subtitle::after {
+      content: "";
+      flex: 1;
+      height: 1px;
+      background-color: #002b5b33;
+      max-width: 120px;
+    }
+
+    /* ===== Text Section ===== */
+    .text-section {
+      width: 80%;
+      margin: 20px auto 40px auto;
+      text-align: center;
+    }
+
+    .text-section h2 {
+      color: #003366;
+      font-size: 1.8em;
+      margin-bottom: 10px;
+    }
+
+    .text-section p {
+      color: #1a2a4f;
+      line-height: 1.6;
+      font-size: 0.95em;
+      margin-bottom: 20px;
+    }
+
+    /* ===== Image Section ===== */
+    .image-section {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 30px;
+    }
+
+    .image-section img {
+      width: min(700px, 90%);
+      height: auto;
+      border-radius: 25px;
+      object-fit: cover;
+      aspect-ratio: 16 / 9;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.25);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .image-section img:hover {
+      transform: scale(1.02);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    }
+
+    /* ===== Footer ===== */
+    footer {
+      margin-top: 40px;
+      font-size: 0.9em;
+      color: #002b5b;
+      background: transparent;
+      border: none;
+      padding: 10px 0;
+    }
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>My School</h1>
+  </header>
+
+  <nav>
+    <a href="index.html" class="active">School</a>
+    <a href="profile.html">Profile</a>
+    <a href="teachers.html">Teachers</a>
+    <a href="major.html">Major</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <main>
+    <div class="subtitle">Official School — SMKN 3 Bengkulu City</div>
+
+    <div class="text-section">
+      <h2>About Our School</h2>
+      <p><b>SMK Negeri 3 Bengkulu City</b> is one of the leading vocational schools in Bengkulu Province,
+      dedicated to nurturing creative, innovative, and skilled students ready to face the challenges of the modern industry.</p>
+
+      <p>Supported by professional educators, advanced facilities, and a strong learning environment,
+      SMKN 3 Bengkulu continues to lead in vocational education — shaping graduates who are disciplined,
+      competent, and globally competitive in the world of technology and engineering.</p>
+    </div>
+
+    <div class="image-section">
+      <img src="smkn3.jpg" alt="SMKN 3 Bengkulu">
+    </div>
+  </main>
+
+    <footer>
+    Copyright© 2025 — This website was created by <span class="made-by">rhamskyy</span><br>
+    <span class="school">TKJ SMKN 3 Bengkulu City</span>
+  </footer>
+
+</body>
+</html>
